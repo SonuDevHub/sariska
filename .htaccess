@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Redirect index.php or index.html to root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(index\.php|index\.html) [NC]
+RewriteRule ^(index\.php|index\.html)$ / [R=301,L]
+
+# If the request is not a real file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Internally rewrite URLs without extensions to .php or .html
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+RedirectMatch 403 ^/contactUs$
