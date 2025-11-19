@@ -145,11 +145,7 @@
 
 .fixed-header .header-upper{
   position: relative;
-  /*top: 0;*/
-  /*background: #202020;
-  border-bottom-color: rgba(0,0,0,0.15);*/
-  backdrop-filter: blur(9px);
-    background-color: #152c29b4;
+  backdrop-filter: blur(15px);
 }
 
 .header-two.fixed-header .header-upper{
@@ -5510,8 +5506,7 @@ footer .bottom_footer .social_media li a:hover {
   right: 30px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: right center;
-
-  font-size: 130px;
+  font-size: 105px;
   text-transform: uppercase;
   color: var(--main-color);
   font-family: var(--font-family-Fraunces);
@@ -5730,7 +5725,6 @@ footer .bottom_footer .social_media li a:hover {
 .menu-card-main {
   position: relative;
   padding: 80px 70px;
-  
   background: #112220;
   background: -webkit-linear-gradient(90deg, rgba(17, 34, 32, 1) 0%, rgba(27, 51, 48, 1) 40%, rgba(15, 30, 28, 1) 50%, rgba(27, 51, 48, 1) 60%, rgba(17, 34, 32, 1) 100%);
   background: -moz-linear-gradient(90deg, rgba(17, 34, 32, 1) 0%, rgba(27, 51, 48, 1) 40%, rgba(15, 30, 28, 1) 50%, rgba(27, 51, 48, 1) 60%, rgba(17, 34, 32, 1) 100%);

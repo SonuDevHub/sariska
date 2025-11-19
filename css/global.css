@@ -5,17 +5,17 @@
 
 :root {
 
-    /* #e6b15f in decimal RGB */
-  --main-color: rgb(230,177,95);
+    /* #F4E5CF in decimal RGB */
+  --main-color: #F4E5CF;
   
   /* #ffffff in decimal RGB */
   --white-color:rgb(255,255,255);
     
-  /* #18312e in decimal RGB */
-  --color-one: rgb(24,49,46);
+  /* #492D1A in decimal RGB */
+  --color-one: #492D1A;
 
-   /* #152c29 in decimal RGB */
-  --color-two: rgb(21,44,41);
+   /* #4A7268 in decimal RGB */
+  --color-two: #4A7268;
 
   /* #a7a7a7 in decimal RGB - for gray text */
   --color-three: rgb(167,167,167);
@@ -496,7 +496,7 @@ img{
 
 
 .section-kt {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 /*** 
