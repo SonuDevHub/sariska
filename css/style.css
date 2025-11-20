@@ -200,7 +200,7 @@
 .main-header .main-box .logo-box .logo img{
   position: relative;
   display: block;
-  height: 46px;
+  height: 40px;
   z-index: 1;
 }
 
@@ -568,27 +568,6 @@
   z-index:5;
 }
 
-.main-menu .navigation > li > ul > li > a:before{
-  content: '';
-  position: absolute;
-  left: 35px;
-  top: 50%;
-  margin-top: -4px;
-  height: 12px;
-  width: 12px;
-  /*background-color: var(--main-color);*/
-  background: url(../images/icons/star-element.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0;
-  visibility: hidden;
-  -moz-transition:all 300ms ease;
-  -webkit-transition:all 300ms ease;
-  -ms-transition:all 300ms ease;
-  -o-transition:all 300ms ease;
-  transition:all 300ms ease;
-}
-
 .main-menu .navigation > li > ul > li:hover > a:before,
 .main-menu .navigation > li > ul > li.current > a:before{
   opacity: 1;
@@ -860,16 +839,16 @@ body.visible-sidebar{
   gap:10px; 
 }
 
-.hidden-bar h5::before,
+/* .hidden-bar h5::before,
 .hidden-bar h5::after {
   content: "";
-  width: 12px;
-  height: 12px;
-  background: url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
-}
+} */
 
 .hidden-bar .info{
   position: relative;
@@ -1007,15 +986,15 @@ body.visible-sidebar{
   color: var(--main-color);
 }
 
-.hidden-bar .side-menu ul li > a:before{
+/* .hidden-bar .side-menu ul li > a:before{
   content: '';
   position: absolute;
   left: 0px;
   top: 50%;
   margin-top: -4px;
-  height: 12px;
-  width: 12px;
-  background: url(../images/icons/star-element.svg);
+  height: 25px;
+  width: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
@@ -1025,7 +1004,7 @@ body.visible-sidebar{
   -ms-transition:all 300ms ease;
   -o-transition:all 300ms ease;
   transition:all 300ms ease;
-}
+} */
 
 .hidden-bar .side-menu ul li:hover > a:before,
 .hidden-bar .side-menu ul li.current > a:before{
@@ -1083,7 +1062,8 @@ body.visible-sidebar{
   overflow-y:auto;
   z-index: 99999;
   opacity: 0;
-  background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat;
+  /* background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat; */
+  background:var(--color-two);
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1122,7 +1102,7 @@ body.visible-sidebar{
 
 .info-bar .inner-box{
   position:relative;
-  background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat;
+  /* background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat; */
   padding-top: 100px;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -1165,8 +1145,8 @@ body.visible-sidebar{
   position:relative;
   max-width: 200px;
   margin: 0 auto;
-  margin-bottom: 45px;
-  border-radius: 300px 300px 0 0;
+  /* margin-bottom: 45px; */
+  border-radius: 5px;
   display: inline-block;
 }
 
@@ -1174,21 +1154,7 @@ body.visible-sidebar{
   position:relative;
   display: block;
   width: 100%;
-  border-radius: 300px 300px 0 0;
-}
-
-.info-bar .inner-box .image-box::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border: 1px solid var(--main-color);
-  pointer-events: none;
-  box-sizing: border-box;
-  border-radius: 300px 300px 0 0;
-  z-index: 100;
+  border-radius: 5px;
 }
 
 
@@ -1200,17 +1166,6 @@ body.visible-sidebar{
   display: inline-flex;
   align-items: center;
   gap:10px; 
-}
-
-.info-bar h5::before,
-.info-bar h5::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background: url(../images/icons/star-element.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: inline-block;
 }
 
 .info-bar .info{
@@ -1544,20 +1499,6 @@ video {
 }
 
 
-/* Add star only to non-last items */
-.banner-social-list .custom-ul li:not(:first-child)::after {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: url(../images/icons/star-element.svg) no-repeat center center;
-  background-size: contain;
-  position: absolute;
-  right: -15px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 
 /* Container positioning */
 .bg-video-wrap .banner-call {
@@ -1639,9 +1580,9 @@ video {
 .title-box .subtitle::before,
 .title-box .subtitle::after {
   content: "";
-  width: 12px;
-  height: 12px;
-  background: url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -1723,35 +1664,21 @@ video {
   overflow:hidden;
   padding: 0;
   margin-bottom: 25px;
-  border-radius: 500px 500px 0 0;
+  border-radius: 5px;
 }
 
 .offer-block .inner-box .image{
   position: relative;
   display: inline-block;
-  border-radius: 500px 500px 0 0;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .offer-block .inner-box .image img{
   display: block;
-  border-radius: 500px 500px 0 0;
+  border-radius:5px;
   position: relative;
   z-index: 1;
-}
-
-.offer-block .inner-box .image::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 1px solid var(--main-color);
-  border-radius: 500px 500px 0 0;
-  pointer-events: none;
-  z-index: 2;
-  box-sizing: border-box;
 }
 
 
@@ -2007,27 +1934,13 @@ video {
   display: block;
   width: 100%;
   z-index: 1;
-  border-radius: 100% 100% 0 0;
+  border-radius:5px;
 
 }
 
 .story-section .image-col .image {
   position: relative;
   display: inline-block;
-}
-
-.story-section .image-col .image::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 1px solid var(--main-color);
-  pointer-events: none;
-  box-sizing: border-box;
-  border-radius: 100% 100% 0 0;
-  z-index: 100;
 }
 
 
@@ -2282,9 +2195,9 @@ video {
   margin-left: 36px;
   top: 50%;
   margin-top: -8px;
-  height: 14px;
-  width: 14px;
-  background: url(../images/icons/star-element.svg) no-repeat;
+  height: 25px;
+  width: 25px;
+  background: url(../images/icons/lion-svg.svg) no-repeat;
 }
 
 .menu-tabs .buttons .tab-buttons .tab-btn:last-child:after{
@@ -2507,7 +2420,7 @@ video {
   overflow:hidden;
   margin-bottom: 25px;
   background-color:var(--main-color);
-  border-radius: 500px 500px 0 0;
+  border-radius: 5px;
 }
 
 .offer-block-two .inner-box .image img{
@@ -2522,7 +2435,7 @@ video {
 
 .offer-block-two .inner-box:hover .image img{
   opacity:0.60;
-  transform:scale(1.05,1.05) rotate(2deg);
+  transform:scale(1.05,1.05);
 }
 
 .offer-block-two .image::before{
@@ -4122,7 +4035,7 @@ video {
 
 .main-footer{
   position: relative;
-  background-color: var(--color-one);
+  /* background-color: var(--color-two); */
   z-index: 1;
 }
 
@@ -4130,12 +4043,10 @@ video {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: 
-    linear-gradient(to bottom, var(--color-one) 10%, transparent 60%),
-    url(../images/background/footer-bg.jpg) no-repeat;
+  background: url(../images/banner/footer-bg.png) no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  opacity: 0.2; /* Keep it 1 if you already fade via gradient */
+  opacity:0.5; /* Keep it 1 if you already fade via gradient */
   z-index: -1;
 }
 
@@ -4180,7 +4091,7 @@ video {
   left: 10px;
   right: 10px;
   bottom: 10px;
-  border: 1px solid var(--main-color);
+  /* border: 1px solid var(--main-color); */
   border-radius: calc(200px - 20px); /* Adjust for inner corner */
   pointer-events: none;
   z-index: 2;
@@ -4200,8 +4111,8 @@ video {
 .main-footer .footer-image-col .inner{
   position: relative;
   text-align: center;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   min-height: 100%;
 }
 
@@ -4234,17 +4145,25 @@ video {
   padding-bottom: 15px;
 }
 
-.main-footer .info-col .info h6::before,
+/* .main-footer .info-col .info h6::before,
 .main-footer .info-col .info h6::after {
   content: "";
-  width: 12px;
-  height: 12px;
-  background: url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+} */
+.main-footer .info-col .info h6::before{
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
 }
-
 .main-footer .info-col .info li{
   position: relative;
   line-height: 1.5em;
@@ -4276,9 +4195,9 @@ video {
   display: inline-block;
   vertical-align: middle;
   margin: 0 1px;
-  height: 14px;
-  width: 14px;
-  background:url(../images/icons/star-element.svg) no-repeat;
+  height:25px;
+  width:25px;
+  background:url(../images/icons/lion-svg.svg) no-repeat;
 }
 
 .main-footer .info-col .separator span:before{
@@ -5142,7 +5061,7 @@ footer .bottom_footer .social_media li a:hover {
   -ms-transition:all 500ms ease;
   -o-transition:all 500ms ease;
   transition:all 500ms ease;
-  border-radius: 200px 200px 0 0;
+  border-radius: 5px;
 }
 
 .why-block-two .image-box::after{
@@ -5164,7 +5083,7 @@ footer .bottom_footer .social_media li a:hover {
 .why-block-two .inner-box:hover .image-box::after {
   -webkit-animation: circle .95s;
   animation: circle .95s;
-  border-radius: 200px 200px 0 0;
+  border-radius:5px;
 }
 
 .why-block-two .over-box{
@@ -5522,7 +5441,6 @@ footer .bottom_footer .social_media li a:hover {
   left: 30px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
-
   font-size: 130px;
   text-transform: uppercase;
   color: var(--main-color);
@@ -5538,7 +5456,7 @@ footer .bottom_footer .social_media li a:hover {
   margin-left: 20px;
 }
 
-.menu-one .menu-col .inner:before{
+/* .menu-one .menu-col .inner:before{
   content: '';
   position: absolute;
   right: -15px;
@@ -5550,7 +5468,7 @@ footer .bottom_footer .social_media li a:hover {
   background-image:url(../images/resource/pattern-black.png);
   background-repeat: repeat;
   background-position: top center;
-}
+} */
 
 .menu-one.alternate .menu-col .inner:before{
   left: -15px;
@@ -5566,23 +5484,8 @@ footer .bottom_footer .social_media li a:hover {
 
 .menu-one .image-col .image img{
   display: block;
-  border-radius: 300px 300px 0 0;
   position: relative;
   z-index: 1;
-}
-
-.menu-one .image-col .image::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border: 1px solid var(--main-color);
-  border-radius: 300px 300px 0 0;
-  pointer-events: none;
-  z-index: 2;
-  box-sizing: border-box;
 }
 
 .menu-one .menu-col{
@@ -5613,9 +5516,9 @@ footer .bottom_footer .social_media li a:hover {
   position: absolute;
   left: 0;
   top: 14px;
-  width: 20px;
-  height: 20px;
-  background-image:url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background-image:url(../images/icons/lion-svg.svg);
 }
 
 .menu-one .menu-col .dish-block{
@@ -5814,31 +5717,16 @@ footer .bottom_footer .social_media li a:hover {
 .menu-card-style.alternate .image-col .image{
   position: relative;
   display: inline-block;
-  border-radius: 400px 400px 0 0;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .menu-card-style .image-col .image img,
 .menu-card-style.alternate .image-col .image img{
   display: block;
-  border-radius: 400px 400px 0 0;
+  border-radius: 5px;
   position: relative;
   z-index: 1;
-}
-
-.menu-card-style .image-col .image::before,
-.menu-card-style.alternate .image-col .image::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  border: 1px solid var(--main-color);
-   border-radius: 400px 400px 0 0;
-  pointer-events: none;
-  z-index: 2;
-  box-sizing: border-box;
 }
 
 .menu-card-style .menu-col{
@@ -6361,9 +6249,9 @@ footer .bottom_footer .social_media li a:hover {
 .contact-page .loc-block.info-block h5::before,
 .contact-page .loc-block.info-block h5::after {
   content: "";
-  width: 12px;
-  height: 12px;
-  background: url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -6372,7 +6260,7 @@ footer .bottom_footer .social_media li a:hover {
 .contact-page .loc-block .contact-image{
   position: relative;
   display: inline-block;
-  border-radius: 500px 500px 0 0;
+  /* border-radius: 500px 500px 0 0; */
   overflow: hidden;
   text-align: center;
   margin-bottom: 30px;
@@ -6380,12 +6268,11 @@ footer .bottom_footer .social_media li a:hover {
 
 .contact-page .loc-block .contact-image img{
   display: block;
-  border-radius: 500px 500px 0 0;
   position: relative;
   z-index: 1;
 }
 
-.contact-page .loc-block .contact-image::before {
+/* .contact-page .loc-block .contact-image::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -6397,7 +6284,7 @@ footer .bottom_footer .social_media li a:hover {
   pointer-events: none;
   z-index: 2;
   box-sizing: border-box;
-}
+} */
 
 .c-page-form-box {
   position: relative;
@@ -6501,9 +6388,9 @@ footer .bottom_footer .social_media li a:hover {
 }
 
 .dot {
-  width: 13px;
-  height: 13px;
-  background: url(../images/icons/star-element.svg);
+  width: 25px;
+  height: 25px;
+  background: url(../images/icons/lion-svg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   margin-bottom:-1px;
@@ -6511,165 +6398,6 @@ footer .bottom_footer .social_media li a:hover {
 
 .dot.bottom-dot {
   margin-top:-1px;
-}
-
-
-/*** 
-
-====================================================================
-  Chef Page
-====================================================================
-
-***/
-
-.chef-section{
-  position: relative;
-  background: var(--color-two);
-}
-
-.chef-section .title-box.centered {
-  max-width: 1000px;
-}
-
-.chef-section .outer-container{
-  position: relative;
-}
-
-.chef-section .row{
-  margin: 0 0;
-}
-
-.chef-section .image-col{
-  position: relative;
-  padding: 0 0;
-}
-
-.chef-section.alternate .image-col{
-  order: 12;
-}
-
-.chef-section .image-col .inner{
-  position: relative;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-}
-
-.chef-section .image-col .image{
-  position: relative;
-  display: inline-block;
-  border-radius: 500px 500px 0 0;
-  overflow: hidden;
-}
-
-.chef-section .image-col .image img{
-  display: block;
-  border-radius: 500px 500px 0 0;
-  position: relative;
-  z-index: 1;
-}
-
-.chef-section .image-col .image::before {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border: 1px solid var(--main-color);
-   border-radius: 500px 500px 0 0;
-  pointer-events: none;
-  z-index: 2;
-  box-sizing: border-box;
-}
-
-.chef-section .content-col{
-  position: relative;
-  padding: 0 0;
-  text-align: left;
-}
-
-.chef-section.alternate .content-col{
-  order: 0;
-}
-
-.chef-section .content-col .inner{
-  position: relative;
-  display: block;
-  padding: 50px 100px 0 20px;
-}
-
-.chef-section .content-col .content-box{
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.chef-section .content-col .content-box .side-image{
-  text-align: right;
-  margin-top: 100px;
-}
-
-.chef-section .content-col .content-box .side-image img{
-  border-radius: 100px 0 100px 0;
-}
-
-.chef-section.alternate .content-col .content-box{
-  float: right;
-}
-
-.chef-section .content-col .content-box h5 {
-  padding-bottom: 25px;
-}
-
-.chef-section .content-col .author{
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--main-color);
-  font-size: 12px;
-  letter-spacing: 0.20em;
-  margin-top: 5px;
-}
-
-.chef-section.alternate .content-col .link-box{
-  padding-top: 0px;
-}
-
-.intro-section.quote{
-  position: relative;
-  padding: 200px 0;
-  background: var(--black-color);
-}
-
-.chef-section .image-col .round-stamp-2{
-  position: absolute;
-  right: 0px;
-  top: 65px;
-  z-index: 3;
-  width: 133px;
-  height: 133px;
-  display: flex; /* Flexbox added */
-  align-items: center; /* Vertical centering */
-  justify-content: center; /* Horizontal centering */
-  z-index: 100;
-}
-
-.chef-section .image-col .round-stamp-2 .stamp_icon{
-  position: relative;
-  z-index: 100;
-}
-
-.chef-section .image-col .round-stamp-2:before{
-  position:absolute;
-  content:'';
-  left:0px;
-  top:0px;
-  right:0px;
-  bottom:0px;
-  background:url(../images/resource/chefbadge.png) no-repeat;
 }
 
 
