@@ -494,3 +494,23 @@ if($('.main-header').length){
 	
 
 })(window.jQuery);
+
+
+
+
+// lion animation
+document.addEventListener("DOMContentLoaded", function () {
+    const lion = document.querySelector('.lion');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                lion.classList.add("animate");
+            } else {
+                lion.classList.remove("animate");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    observer.observe(lion);
+});
