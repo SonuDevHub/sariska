@@ -760,7 +760,7 @@ body.visible-sidebar {
   bottom: 0;
   width: 100%;
   max-width: 360px;
-  background: var(--color-two);
+  background: var(--color-one);
   height: 100%;
   overflow-y: auto;
   z-index: 9999;
@@ -791,7 +791,7 @@ body.visible-sidebar {
 
 .hidden-bar .inner-box {
   position: relative;
-  background-color: var(--color-two);
+  background-color: var(--color-one);
   padding-top: 75px;
   padding-bottom: 50px;
 }
@@ -1063,8 +1063,8 @@ body.visible-sidebar {
   overflow-y: auto;
   z-index: 99999;
   opacity: 0;
-  /* background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat; */
-  background: var(--color-two);
+  background:var(--color-one);
+  background: var(--color-one);
   visibility: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1103,7 +1103,7 @@ body.visible-sidebar {
 
 .info-bar .inner-box {
   position: relative;
-  /* background:var(--color-two) url(../images/resource/pattern-dark.png) center top repeat; */
+  background:var(--color-one);
   padding-top: 100px;
   padding-bottom: 50px;
   padding-left: 30px;
