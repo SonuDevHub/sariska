@@ -1812,7 +1812,7 @@ video {
 
 .story-section {
   position: relative;
-  background-color: var(--color-two);
+  background-color: var(--color-one);
 }
 
 .story-section .title-box {
@@ -2406,7 +2406,7 @@ video {
 
 .special-offer {
   position: relative;
-  background: var(--color-two);
+  background: var(--color-one);
 }
 
 .special-offer .outer-container {
@@ -3200,7 +3200,7 @@ video {
 .intro-section {
   position: relative;
   padding: 300px 0;
-  background: var(--color-two);
+  background: var(--color-one);
 }
 
 .intro-section .image-layer {
@@ -5298,7 +5298,7 @@ footer .bottom_footer .social_media li a:hover {
 
 .image-gallery {
   position: relative;
-  background-color: var(--color-one);
+  background-color: var(--color-two);
   overflow: hidden;
 }
 
@@ -6566,8 +6566,6 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
 }
 
 
-
-
 /* lion animtion */
 
 .container {
@@ -6578,7 +6576,7 @@ html:not(.body-menu-opened) .hamburger .bottom-bun {
   height: 95%;
   width: 100%;
   margin: auto;
-  stroke: white;
+  stroke: #B75E26;
   stroke-width: 8px;
   fill: transparent;
   stroke-dashoffset: -3350;
