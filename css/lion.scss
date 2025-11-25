@@ -1,0 +1,123 @@
+.image-col {
+  display: flex;
+  justify-content: center;  /* horizontally center */
+  align-items: center;      /* vertically center (agar height fix ho) */
+}
+
+.image-box svg {
+  display: block;
+  margin: auto;
+  width: 100%;        /* ya apne hisab se px me, jaise 400px */
+  max-width: 500px;   /* responsive fix, adjust as needed */
+  height: auto;
+}
+
+
+svg {
+
+    path {
+        stroke-miterlimit: 10;
+        stroke-width: 0.25;
+    }
+} 
+
+.light-orange,
+.light-orange-eye {
+    fill: #d89848;
+    stroke: #d89848;
+}
+
+.chin-white {
+    fill: #fff0e3;
+    stroke: #fff0e3;
+}
+
+.eyes {
+    fill: yellow;
+}
+
+.face-stripes {
+    fill: #241205;
+    stroke: #241205;
+}
+
+.nose-outer {
+    fill: #241205;
+}
+
+.outlines {
+    fill: none;
+    stroke: #241205;
+    stroke-width: 1.5;
+}
+
+#check {
+    .outlines {
+        stroke-dasharray: 810.3959350585938px;
+        stroke-dashoffset: -810.3959350585938px;
+        fill: transparent;
+        transition: stroke-dashoffset 3s linear 1.5s, fill 2s ease 1.5s; /* fill early */
+    }
+
+    .face-stripes,
+    .nose-outer {
+        stroke-dasharray: 513.2638549804688px;
+        stroke-dashoffset: -513.2638549804688px;
+        fill: transparent;
+        transition: stroke-dashoffset 3s linear 1.5s, fill 1.5s ease 1s; /* faster */
+    }
+
+    .nose-outer {
+        fill: transparent;
+        transition: fill 1.5s ease 1s; /* faster */
+    }
+
+    .light-orange,
+    .light-orange-eye {
+        fill: transparent;
+        stroke: none;
+        transition: fill .7s ease .7s; /* quicker */
+    }
+
+    .chin-white {
+        fill: transparent;
+        stroke: none;
+        transition: fill .7s ease .5s; /* quicker */
+    }
+
+    .eyes {
+        fill: transparent;
+        transition: fill .4s ease; /* quicker */
+    }
+
+    &.checked {
+        .outlines {
+            stroke-dashoffset: 0px;
+            fill: #b46000;
+            transition: stroke-dashoffset 3s linear, fill 2s ease 1.8s; /* earlier fill */
+        }
+
+        .face-stripes,
+        .nose-outer {
+            stroke-dashoffset: 0px;
+            fill: #241205;
+            transition: stroke-dashoffset 3s linear, fill 1.5s ease 1.2s; /* earlier */
+        }
+
+        .light-orange,
+        .light-orange-eye {
+            fill: #d89848;
+            transition: fill .7s ease 2.2s; /* earlier */
+        }
+
+        .chin-white {
+            fill: #fff0e3;
+            transition: fill .7s ease 2.6s; /* earlier */
+        }
+
+        .eyes {
+            fill: yellow;
+            transition: fill .4s ease 3s; /* earlier */
+        }
+    }
+}
