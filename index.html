@@ -14,7 +14,7 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link href="css/responsive.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/lion.scss">
+        <link rel="stylesheet" href="css/lion.css">
     </head>
 
     <body>
@@ -440,6 +440,40 @@
                     </div>
                 </div>
             </section>
+            <div style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 50px 0;
+                text-align: center;
+            ">
+
+                <!-- resOS Booking widget v3 script START -->
+                <a class="resos-booking-widget"
+                    href="https://sariska.resos.com/booking" data-lang="en"
+                    data-restaurant-id="KoxvDxvsxDw3vuLPe"
+                    data-domain="sariska.resos.com">Book a table</a>
+
+                <div id="resos-booking-script-3"
+                    style="text-align:center;opacity:0.6;font-size:70%;margin-top:10px;">
+                    <a target="_blank" rel="noopener"
+                        href="https://resos.com/feature/table-booking-app/?utm_source=restaurantsite&utm_medium=bookingwidget&utm_term=Restaurant-booking-app">
+                        Restaurant booking app by resOS
+                    </a>
+                </div>
+
+                <script type="text/javascript">
+        (function() {
+            const scr = document.createElement("script");
+            scr.src = "https://sariska.resos.com/embed/booking/widget.js?ts=" + new Date().getTime();
+            document.getElementById("resos-booking-script-3").appendChild(scr);
+        })()
+    </script>
+                <!-- resOS Booking widget v3 script END -->
+
+            </div>
 
             <!-- lion animaion -->
             <section class="services-section section-kt">
@@ -1246,7 +1280,7 @@
                         <div class="dish-gallery-slider owl-theme owl-carousel">
 
                             <!--Slide Item-->
-                            <div class="offer-block-two">
+                            <!-- <div class="offer-block-two">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1261,10 +1295,9 @@
                                         fresh herbs and mild spices.
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> -->
                             <!--Slide Item-->
-                            <div class="offer-block-two margin-top">
+                            <!-- <div class="offer-block-two margin-top">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1278,7 +1311,7 @@
                                         tikka, mint chutney & onions.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Slide Item-->
                             <div class="offer-block-two">
@@ -1298,7 +1331,7 @@
                             </div>
 
                             <!--Slide Item-->
-                            <div class="offer-block-two margin-top">
+                            <!-- <div class="offer-block-two margin-top">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1313,10 +1346,10 @@
                                         granola & creamy yoghurt.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Slide Item-->
-                            <div class="offer-block-two">
+                            <!-- <div class="offer-block-two">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1331,10 +1364,10 @@
                                         Served with warm naan chips.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Slide Item-->
-                            <div class="offer-block-two margin-top">
+                            <!-- <div class="offer-block-two margin-top">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1348,10 +1381,10 @@
                                         tomatoes & a mango-mustard glaze.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Slide Item-->
-                            <div class="offer-block-two">
+                            <!-- <div class="offer-block-two">
                                 <div class="inner-box">
                                     <div class="image">
                                         <a href="#"><img
@@ -1366,7 +1399,7 @@
                                         spiced chicken & mayo.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Slide Item-->
                             <div class="offer-block-two margin-top">
@@ -1403,168 +1436,7 @@
                 </div>
             </section>
 
-            <!--Reservation Section-->
-            <!-- <section class="reserve-section style-two section-kt">
-                <div class="image-layer"
-                    style="background-image: url(images/background/image-10.jpg);"></div>
-                <div class="auto-container">
-                    <div class="outer-box">
-                        <div class="row clearfix">
-
-                            <div
-                                class="reserv-col col-lg-8 col-md-12 col-sm-12 mx-auto">
-                                <div class="inner">
-                                    <div class="title-box centered">
-                                        <div class="subtitle"><span>Online
-                                                reservation</span></div>
-                                        <h2>Book A Table</h2>
-                                        <div class="request-info">Booking
-                                            request <a
-                                                href="#">+88-123-123456</a> or
-                                            fill out the order form</div>
-                                    </div>
-                                    <div class="default-form reservation-form">
-                                        <form>
-                                            <div class="row clearfix">
-                                                <div
-                                                    class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <input type="text"
-                                                            name="fieldname"
-                                                            value
-                                                            placeholder="Your Name"
-                                                            required>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <input type="text"
-                                                            name="fieldname"
-                                                            value
-                                                            placeholder="Phone Number"
-                                                            required>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-4 col-md-6 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <span
-                                                            class="alt-icon far fa-user"></span>
-                                                        <select class="l-icon">
-                                                            <option>1
-                                                                Person</option>
-                                                            <option>2
-                                                                Person</option>
-                                                            <option>3
-                                                                Person</option>
-                                                            <option>4
-                                                                Person</option>
-                                                            <option>5
-                                                                Person</option>
-                                                            <option>6
-                                                                Person</option>
-                                                            <option>7
-                                                                Person</option>
-                                                        </select>
-                                                        <span
-                                                            class="arrow-icon far fa-angle-down"></span>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-4 col-md-6 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <span
-                                                            class="alt-icon far fa-calendar"></span>
-                                                        <input
-                                                            class="l-icon datepicker"
-                                                            type="text"
-                                                            name="fieldname"
-                                                            value
-                                                            placeholder="DD-MM-YYYY"
-                                                            required readonly>
-                                                        <span
-                                                            class="arrow-icon far fa-angle-down"></span>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-4 col-md-12 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <span
-                                                            class="alt-icon far fa-clock"></span>
-                                                        <select class="l-icon">
-                                                            <option>08 : 00
-                                                                am</option>
-                                                            <option>09 : 00
-                                                                am</option>
-                                                            <option>10 : 00
-                                                                am</option>
-                                                            <option>11 : 00
-                                                                am</option>
-                                                            <option>12 : 00
-                                                                pm</option>
-                                                            <option>01 : 00
-                                                                pm</option>
-                                                            <option>02 : 00
-                                                                pm</option>
-                                                            <option>03 : 00
-                                                                pm</option>
-                                                            <option>04 : 00
-                                                                pm</option>
-                                                            <option>05 : 00
-                                                                pm</option>
-                                                            <option>06 : 00
-                                                                pm</option>
-                                                            <option>07 : 00
-                                                                pm</option>
-                                                            <option>08 : 00
-                                                                pm</option>
-                                                            <option>09 : 00
-                                                                pm</option>
-                                                            <option>10 : 00
-                                                                pm</option>
-                                                        </select>
-                                                        <span
-                                                            class="arrow-icon far fa-angle-down"></span>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-12 col-md-12 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <textarea
-                                                            name="fieldname"
-                                                            placeholder="Message"
-                                                            required></textarea>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="form-group col-lg-12 col-md-12 col-sm-12">
-                                                    <div class="field-inner">
-                                                        <button type="submit"
-                                                            class="theme-btn btn-style-one clearfix">
-                                                            <span
-                                                                class="btn-wrap">
-                                                                <span
-                                                                    class="text-one">book
-                                                                    a
-                                                                    table</span>
-                                                                <span
-                                                                    class="text-two">book
-                                                                    a
-                                                                    table</span>
-                                                            </span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
+         
 
             <!--Gallery Section-->
             <section class="image-gallery section-kt">
