@@ -318,6 +318,10 @@
                 </div>
             </section>
 
+            <!-- snow canvas -->
+            <canvas id="snow-canvas"></canvas>
+            <!-- snow canvas -->
+
             <!--End Banner Section -->
 
             <section class="menu-one alternate section-kt">
@@ -481,8 +485,61 @@
                 </div>
             </section>
 
+            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                    background-image: url('images/resource/book-a-table.png');
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    padding-top: 70px;
+                    padding-bottom: 40px;
+                ">
+                <div class="centered">
+                    <h2 style="color: #fff">Book a Table</h2>
+                </div>
+
+                <!-- Wrapper to control widget size -->
+                <div style="
+                    max-width: 400px;     /* Desktop width */
+                    width: 100%;          /* Responsive */
+                    margin: 0 auto;
+                    padding: 10px 0;
+                    ">
+                    <a class="resos-booking-widget"
+                        href="https://sariska.resos.com/booking"
+                        data-lang="en"
+                        data-restaurant-id="KoxvDxvsxDw3vuLPe"
+                        data-domain="sariska.resos.com"
+                        style="font-size: 14px !important; padding: 10px 20px !important;">
+                        Book a Table
+                    </a>
+                </div>
+
+                <div id="resos-booking-script-3"
+                    style="text-align:center;opacity:0.6;font-size:70%;margin-top:10px;">
+                    <a target="_blank" rel="noopener" style="color:#fff"
+                        href="https://resos.com/feature/table-booking-app/?utm_source=restaurantsite&utm_medium=bookingwidget&utm_term=Restaurant-booking-app">
+                        Restaurant booking app by resOS
+                    </a>
+                </div>
+
+                <script type="text/javascript">
+                (function() {
+                    const scr = document.createElement("script");
+                    scr.src = "https://sariska.resos.com/embed/booking/widget.js?ts=" + new Date().getTime();
+                    document.getElementById("resos-booking-script-3").appendChild(scr);
+                })()
+            </script>
+            </div>
+
             <!--footer  -->
-            <footer class="main-footer">
+            <footer class="main-footer mt-5">
                 <div class="upper-section section-kt">
                     <div class="auto-container">
                         <div class="row clearfix">
@@ -624,6 +681,7 @@
                 class="icon fa fa-angle-up"></span></div>
 
         <script src="js/jquery.js"></script>
+        <script src="js/snow.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery-ui.js"></script>
